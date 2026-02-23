@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PhotoController;
 
+
 Route::get('/hello', [WelcomeController::class, 'hello']);
 
 Route::get('/world', function () {
@@ -39,3 +40,5 @@ Route::resource('photos', PhotoController::class)->except([
     'update',
     'destroy'
 ]);
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
