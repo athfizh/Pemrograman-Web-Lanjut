@@ -1,0 +1,1 @@
+Belajar Eloquent ORM on Laravel 12
