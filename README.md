@@ -11,7 +11,7 @@
 
 # 🌐 Pemrograman Web Lanjut
 
-### *Advanced Web Programming — Semester Repository*
+### *Advanced Web Programming — Semester 4 Repository*
 
 <br/>
 
@@ -64,28 +64,15 @@
 ```
 Pemrograman-Web-Lanjut/
 │
-├── 📁 jobsheet1/              # Praktikum 1 — Laravel Fundamentals
+├── 📁 jobsheet1/               # Praktikum 1 — Laravel Fundamentals
 │   └── ...
 │
-├── 📁 jobsheet2/              # Praktikum 2 — Point of Sale (POS) System
+├── 📁 jobsheet../              # And another Jobsheet
 │   └── ...
 │
-├── 📁 jobsheet3/PWL_POS/      # Praktikum 3 — POS lanjutan + JavaScript
-│   └── ...
-│
-└── 📁 Laporan Praktikum/      # Kumpulan laporan resmi praktikum
+└── 📁 Laporan Praktikum/       # Kumpulan laporan resmi praktikum
     └── ...
 ```
-
----
-
-## 📋 Daftar Praktikum
-
-| No | Jobsheet | Topik | Teknologi | Status |
-|----|----------|-------|-----------|--------|
-| 1 | `jobsheet1` | Laravel Fundamentals — Instalasi, Routing, Blade | Laravel, PHP | ✅ Selesai |
-| 2 | `jobsheet2` | Point of Sale (POS) — CRUD & Database | Laravel, MySQL | ✅ Selesai |
-| 3 | `jobsheet3/PWL_POS` | POS Lanjutan — JavaScript & Interactivity | Laravel, JS | ✅ Selesai |
 
 ---
 
@@ -112,7 +99,7 @@ git clone https://github.com/athfizh/Pemrograman-Web-Lanjut.git
 cd Pemrograman-Web-Lanjut
 
 # 2. Masuk ke folder jobsheet yang ingin dijalankan
-cd jobsheet3/PWL_POS
+cd jobsheet3
 
 # 3. Install dependencies
 composer install
