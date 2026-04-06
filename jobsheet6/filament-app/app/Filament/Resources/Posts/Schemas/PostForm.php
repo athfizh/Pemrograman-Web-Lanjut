@@ -32,16 +32,26 @@ class PostForm
                         ->schema([
                             Group::make([
                                 TextInput::make('title')
-                                    ->minLength(5)
-                                    ->required(),
+                                    ->required()
+                                    ->rules('min:5|max:100')
+                                    ->validationMessages([
+                                        'min' => 'Judul minimal harus 5 karakter.',
+                                        'required' => 'Judul tidak boleh kosong.',
+                                    ]),
 
                                 TextInput::make('slug')
-                                    ->unique(table: Post::class, column: 'slug', ignorable: fn($record) => $record)
-                                    ->required(),
+                                    ->required()
+                                    ->rules('min:3')
+                                    ->unique()
+                                    ->validationMessages([
+                                        'unique' => 'Slug sudah digunakan, pilih yang lain.',
+                                        'min' => 'Slug minimal harus 3 karakter.',
+                                        'required' => 'Slug tidak boleh kosong.',
+                                    ]),
 
                                 Select::make('category_id')
-                                    ->label('Category')
                                     ->relationship('category', 'name')
+                                    ->required()
                                     ->preload()
                                     ->searchable(),
 
@@ -57,6 +67,7 @@ class PostForm
                         ->icon(Heroicon::OutlinedPhoto)
                         ->schema([
                             FileUpload::make('image')
+                                ->required()
                                 ->disk('public')
                                 ->directory('posts'),
                         ]),
