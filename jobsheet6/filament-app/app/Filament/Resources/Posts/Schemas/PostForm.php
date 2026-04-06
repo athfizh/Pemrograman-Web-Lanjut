@@ -2,18 +2,19 @@
 
 namespace App\Filament\Resources\Posts\Schemas;
 
-
 use App\Models\Post;
-use Filament\Schemas\Schema;
+use Filament\Forms\Components\Checkbox;
 use Filament\Forms\Components\ColorPicker;
+use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\Checkbox;
-use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TagsInput;
-
+use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Group;
+use Filament\Schemas\Components\Section;
+use Filament\Schemas\Schema;
+use Filament\Support\Icons\Heroicon;
 
 class PostForm
 {
@@ -21,35 +22,64 @@ class PostForm
     {
         return $schema
             ->components([
-                //
-                TextInput::make("title")
-                    ->minLength(5)
-                    ->required(),
 
-                TextInput::make("slug")
-                    ->unique(table: Post::class, column: 'slug', ignorable: fn ($record) => $record)
-                    ->required(),
+                Group::make([
 
-                Select::make("category_id")
-                    ->label('Category')
-                    ->relationship("category", "name")
-                    ->preload()
-                    ->searchable(),
+                    // Section A: Post Details — icon pensil
+                    Section::make('Post Details')
+                        ->description('Fill in the details of the post')
+                        ->icon(Heroicon::OutlinedPencilSquare)
+                        ->schema([
+                            Group::make([
+                                TextInput::make('title')
+                                    ->minLength(5)
+                                    ->required(),
 
-                ColorPicker::make('color'),
+                                TextInput::make('slug')
+                                    ->unique(table: Post::class, column: 'slug', ignorable: fn($record) => $record)
+                                    ->required(),
 
-                MarkdownEditor::make('body'),
+                                Select::make('category_id')
+                                    ->label('Category')
+                                    ->relationship('category', 'name')
+                                    ->preload()
+                                    ->searchable(),
 
-                FileUpload::make('image')
-                    ->disk('public')
-                    ->directory('posts'),
+                                ColorPicker::make('color'),
+                            ])->columns(2),
 
-                TagsInput::make('tags')
-                    ->placeholder('New tag'),
+                            MarkdownEditor::make('body')
+                                ->columnSpanFull(),
+                        ]),
 
-                Checkbox::make('published'),
+                    // Section B: Image Upload — icon foto
+                    Section::make('Image Upload')
+                        ->icon(Heroicon::OutlinedPhoto)
+                        ->schema([
+                            FileUpload::make('image')
+                                ->disk('public')
+                                ->directory('posts'),
+                        ]),
 
-                DateTimePicker::make('published_at'),
-            ]);
+                ])->columnSpan(2),
+
+                // J.1 — Meta kanan (1/3)
+                Group::make([
+
+                    // Section C: Meta Information — icon tag
+                    Section::make('Meta Information')
+                        ->icon(Heroicon::OutlinedTag)
+                        ->schema([
+                            TagsInput::make('tags')
+                                ->placeholder('New tag'),
+
+                            Checkbox::make('published'),
+
+                            DateTimePicker::make('published_at'),
+                        ]),
+
+                ])->columnSpan(1),
+
+            ])->columns(3);
     }
 }
