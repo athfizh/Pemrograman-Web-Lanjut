@@ -176,7 +176,6 @@ Melalui mata kuliah ini, mahasiswa mampu:
 - [x] Menggunakan **Eloquent ORM** untuk manajemen database
 - [x] Mengintegrasikan **JavaScript** untuk interaktivitas frontend
 - [x] Menerapkan **autentikasi** dan **otorisasi** pengguna
-- [ ] Deployment aplikasi ke server produksi *(coming soon)*
 
 ---
 
