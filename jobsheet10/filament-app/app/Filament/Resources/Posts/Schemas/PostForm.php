@@ -50,9 +50,10 @@ class PostForm
                                     ]),
 
                                 Select::make('category_id')
-                                    ->relationship('category', 'name')
+                                    ->relationship('category', 'name') // category = nama relasi pada model, name = field yang ditampilkan
+                                    ->options(\App\Models\Category::all()->pluck('name', 'id'))
                                     ->required()
-                                    ->preload()
+                                    // ->preload()
                                     ->searchable(),
 
                                 ColorPicker::make('color'),
