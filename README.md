@@ -16,11 +16,9 @@
 <br/>
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![Blade](https://img.shields.io/badge/Blade_Template-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 
 <br/>
 
@@ -64,15 +62,34 @@
 ```
 Pemrograman-Web-Lanjut/
 │
-├── 📁 jobsheet1/               # Praktikum 1 — Laravel Fundamentals
-│   └── ...
+├── 📁 jobsheet1/               # Praktikum 1
+├── 📁 jobsheet2/               # Praktikum 2
+├── 📁 jobsheet3/               # Praktikum 3
+├── 📁 jobsheet4/               # Praktikum 4
+├── 📁 jobsheet5/               # Praktikum 5
+├── 📁 jobsheet6/               # Praktikum 6
+├── 📁 jobsheet7/               # Praktikum 7
+├── 📁 jobsheet9/               # Praktikum 9
+├── 📁 jobsheet10/              # Praktikum 10
 │
-├── 📁 jobsheet../              # And another Jobsheet
-│   └── ...
-│
-└── 📁 Laporan Praktikum/       # Kumpulan laporan resmi praktikum
-    └── ...
+└── 📁 laporan praktikum/       # Kumpulan laporan resmi praktikum
 ```
+
+---
+
+## 📋 Daftar Jobsheet
+
+| No | Jobsheet | Link |
+|----|----------|------|
+| 1 | Jobsheet 1 | [📁 jobsheet1](./jobsheet1) |
+| 2 | Jobsheet 2 | [📁 jobsheet2](./jobsheet2) |
+| 3 | Jobsheet 3 | [📁 jobsheet3](./jobsheet3) |
+| 4 | Jobsheet 4 | [📁 jobsheet4](./jobsheet4) |
+| 5 | Jobsheet 5 | [📁 jobsheet5](./jobsheet5) |
+| 6 | Jobsheet 6 | [📁 jobsheet6](./jobsheet6) |
+| 7 | Jobsheet 7 | [📁 jobsheet7](./jobsheet7) |
+| 9 | Jobsheet 9 | [📁 jobsheet9](./jobsheet9) |
+| 10 | Jobsheet 10 | [📁 jobsheet10](./jobsheet10) |
 
 ---
 
@@ -93,13 +110,15 @@ Pemrograman-Web-Lanjut/
 
 ## 🚀 Cara Menjalankan Project
 
+> Panduan ini berlaku untuk jobsheet yang berbasis Laravel penuh (memiliki `composer.json`). Jobsheet yang hanya berisi latihan HTML/CSS/PHP tidak memerlukan langkah ini.
+
 ```bash
 # 1. Clone repository ini
 git clone https://github.com/athfizh/Pemrograman-Web-Lanjut.git
 cd Pemrograman-Web-Lanjut
 
 # 2. Masuk ke folder jobsheet yang ingin dijalankan
-cd jobsheet3
+cd jobsheet3  # ganti sesuai jobsheet yang diinginkan
 
 # 3. Install dependencies
 composer install
@@ -128,6 +147,7 @@ php artisan serve
 ## 📌 Highlight Project
 
 ### 🏪 Sistem Point of Sale (POS)
+
 Aplikasi kasir sederhana berbasis web yang dibangun menggunakan **Laravel** dengan fitur:
 - ✔️ Manajemen produk (tambah, edit, hapus, lihat)
 - ✔️ Transaksi penjualan
@@ -139,7 +159,7 @@ Aplikasi kasir sederhana berbasis web yang dibangun menggunakan **Laravel** deng
 
 ## 📄 Laporan Praktikum
 
-Semua laporan resmi dari setiap pertemuan praktikum tersimpan di folder [`Laporan Praktikum/`](./Laporan%20Praktikum/). Laporan mencakup:
+Semua laporan resmi dari setiap pertemuan praktikum tersimpan di folder [`laporan praktikum/`](./laporan%20praktikum/). Laporan mencakup:
 - Tujuan dan dasar teori
 - Langkah-langkah pengerjaan
 - Screenshot hasil
@@ -177,7 +197,5 @@ Melalui mata kuliah ini, mahasiswa mampu:
 <sub>⭐ Repository ini dibuat untuk keperluan akademik mata kuliah Pemrograman Web Lanjut</sub>
 
 <br/>
-
-<sub>Made with ❤️ and ☕ by <b>Athaulla Hafizh</b></sub>
 
 </div>
