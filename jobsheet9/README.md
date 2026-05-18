@@ -1,3 +1,3 @@
-01-Implementasi Wizard Form (Multi Step Form) di Filament
-02-Implementasi Info List (View Page) di Filament 
-03-Implementasi Tabs pada Info List di Filament 
+01-Implementasi Sorting (Ascending & Descending) pada Table Filament  
+02-Implementasi Search & Filter pada Table Filament 
+03-Implementasi Toggle Column pada Table Filament  
