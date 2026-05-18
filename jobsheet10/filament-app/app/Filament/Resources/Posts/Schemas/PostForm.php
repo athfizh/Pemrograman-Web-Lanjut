@@ -82,8 +82,12 @@ class PostForm
                     Section::make('Meta Information')
                         ->icon(Heroicon::OutlinedTag)
                         ->schema([
-                            TagsInput::make('tags')
-                                ->placeholder('New tag'),
+                            // TagsInput::make('tags')
+                            //     ->placeholder('New tag'),
+                            Select::make('tags')
+                                ->relationship('tags', 'name')
+                                ->multiple()
+                                ->preload(),
 
                             Checkbox::make('published'),
 
