@@ -9,7 +9,7 @@
 ╚═╝      ╚══╝╚══╝ ╚══════╝    ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   
 ```
 
-# 🌐 Pemrograman Web Lanjut
+# Pemrograman Web Lanjut
 
 ### *Advanced Web Programming — Semester 4 Repository*
 
