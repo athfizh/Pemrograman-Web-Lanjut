@@ -42,16 +42,24 @@
     <td>Athaulla Hafizh</td>
   </tr>
   <tr>
-    <td><b>Username GitHub</b></td>
-    <td><a href="https://github.com/athfizh">@athfizh</a></td>
+    <td><b>Presensi / NIM</b></td>
+    <td>04 / 244107020030</td>
+  </tr>
+  <tr>
+    <td><b>Kelas</b></td>
+    <td><a>TI-2A</a></td>
   </tr>
   <tr>
     <td><b>Mata Kuliah</b></td>
-    <td>Pemrograman Web Lanjut</td>
+    <td>Pemrograman Web Lanjut (PWL)</td>
   </tr>
   <tr>
     <td><b>Program Studi</b></td>
-    <td>DIV - Teknik Informatika</td>
+    <td>D-IV Teknik Informatika</td>
+  </tr>
+  <tr>
+    <td><b>Jurusan</b></td>
+    <td>Teknologi Informasi — Politeknik Negeri Malang</td>
   </tr>
 </table>
 
